@@ -1,0 +1,308 @@
+(footprint "CoaxialSwitch_Murata_MM8030-26_Vertical"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Microwave Coaxial Connectors with Switch SWG Type https://www.murata.com/-/media/webrenewal/support/library/catalog/products/connector/o30e.ashx")
+	(tags "Murata")
+	(property "Reference" "REF**"
+		(at 0 -2.4 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "74b0dd7e-9f5d-4784-8e25-03b0cb986ee1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CoaxialSwitch_Murata_MM8030-26_Vertical"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "3342caeb-af0f-4aa1-925b-053d8cadaee3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "18fc5250-b6c5-46c1-8ed8-26987e4083e3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "55d91bbe-cdf1-4810-9d2a-7d5981aad7c3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9baf4caa-24a2-4c95-8182-2de6427d1282")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd allow_soldermask_bridges)
+	(fp_line
+		(start -1.1 -1.1)
+		(end -1.1 -0.7)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "4ce7f3ab-80bc-474c-828b-37c70727fdc7")
+	)
+	(fp_line
+		(start -0.6 -1.1)
+		(end -1.1 -1.1)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "d037170b-9440-4f40-b6bc-4ebcd7261f02")
+	)
+	(fp_line
+		(start 0.6 1.1)
+		(end 1.1 1.1)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "d21d9633-15d5-4105-8d5d-a0d33f309e69")
+	)
+	(fp_line
+		(start 1.1 -1.1)
+		(end 0.6 -1.1)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "c142ae08-fdb9-4410-a776-616b2e6ca4fd")
+	)
+	(fp_line
+		(start 1.1 -0.7)
+		(end 1.1 -1.1)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "56327f08-e2a3-42bc-a67f-86e898849376")
+	)
+	(fp_line
+		(start 1.1 0.7)
+		(end 1.1 1.1)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "9942a78f-6ed4-4a1a-802a-67d2e99d0bfa")
+	)
+	(fp_poly
+		(pts
+			(xy -1 1) (xy -1.282843 1) (xy -1 1.282843)
+		)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "6c24bff8-c9ec-43d1-86e0-5ec93e51b19d")
+	)
+	(fp_poly
+		(pts
+			(xy -0.5 -1.15) (xy 0.5 -1.15) (xy 0.5 -0.55) (xy 0.25 -0.32) (xy -0.25 -0.32) (xy -0.5 -0.55)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Mask")
+		(uuid "408a87da-0fd0-4b2c-85f4-34cb77c5c8d0")
+	)
+	(fp_poly
+		(pts
+			(xy -0.25 0.32) (xy 0.25 0.32) (xy 0.5 0.55) (xy 0.5 1.15) (xy -0.5 1.15) (xy -0.5 0.55)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Mask")
+		(uuid "b92496fc-57f9-4a5f-b97e-e692467442f3")
+	)
+	(fp_rect
+		(start -1.5 -1.5)
+		(end 1.5 1.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "6b67b5c9-7445-4af5-a110-9b1b7a0ae57f")
+	)
+	(fp_line
+		(start -1 -1)
+		(end -1 0.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "d841b66d-f202-4742-8a3c-ddbd5a3f45e8")
+	)
+	(fp_line
+		(start -1 0.6)
+		(end -0.6 1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "cd423660-6470-4901-8147-1b8f8386a286")
+	)
+	(fp_line
+		(start -0.6 1)
+		(end 1 1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "d1f4d387-da77-4fff-add6-3860c4cacfc1")
+	)
+	(fp_line
+		(start 1 -1)
+		(end -1 -1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "fc90506d-89ae-44df-9cc8-b44737401f28")
+	)
+	(fp_line
+		(start 1 -1)
+		(end 1 1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "37ea252e-678a-4ee4-8bf6-cb8c059ce110")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "fae7b16f-1ece-4240-aa44-4608ba1f7ac7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "A" smd rect
+		(at 0 -0.95)
+		(size 0.5 0.4)
+		(layers "F.Cu" "F.Paste")
+		(uuid "1f67d7c9-ee58-441d-a189-37fcf31bf4de")
+	)
+	(pad "C" smd rect
+		(at 0 0.95)
+		(size 0.5 0.4)
+		(layers "F.Cu" "F.Paste")
+		(uuid "59a24412-357c-49a7-9690-0d0ef9698229")
+	)
+	(pad "G" smd custom
+		(at -0.915 0)
+		(size 0.47 1.1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.235 -0.55) (xy 0.235 -0.55) (xy 0.465 -0.32) (xy 0.465 0.32) (xy 0.235 0.55) (xy -0.235 0.55)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "a8ae9d31-1a3d-4519-880e-b1818e5d8c71")
+	)
+	(pad "G" smd rect
+		(at 0 0)
+		(size 0.9 0.64)
+		(layers "F.Cu")
+		(uuid "c753ef01-1aa5-4301-a95a-9ba2ff0317ab")
+	)
+	(pad "G" smd custom
+		(at 0.915 0)
+		(size 0.47 1.1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 0.235 -0.55) (xy -0.235 -0.55) (xy -0.465 -0.32) (xy -0.465 0.32) (xy -0.235 0.55) (xy 0.235 0.55)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "91528314-d5df-4126-97d0-e13ecf15c962")
+	)
+	(model "${KICAD8_3DMODEL_DIR}/_Custom.3dshapes/CoaxialSwitch_Murata_MM8030-26_Vertical.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
