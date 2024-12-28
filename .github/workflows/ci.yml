@@ -1,0 +1,67 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+defaults:
+  run:
+    # NOTE: Default option does not include `-o pipefail` as documented
+    # unless explicitly specifying the `bash` shell.
+    # https://github.com/actions/runner/issues/353
+    shell: bash
+
+jobs:
+  test-symbols:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 3
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4.2.2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5.3.0
+        with:
+          python-version: "3.12.1"
+
+      - name: Set up KLC Check
+        run: |
+          git clone --depth 1 https://gitlab.com/kicad/libraries/kicad-library-utils /opt/kicad-library-utils
+          /opt/kicad-library-utils/klc-check/check_symbol.py --help
+          /opt/kicad-library-utils/klc-check/check_footprint.py --help
+
+      # NOTE: The command returns an exit code of 2 if there are warnings,
+      # but we do not want to fail the CI job if there are warnings.
+      - name: Check symbols
+        run: |
+          /opt/kicad-library-utils/klc-check/check_symbol.py -vv --footprints ./lib/footprints/ ./lib/symbols/_Custom.kicad_sym || [ "${?}" -eq 2 ]
+
+  test-footprints:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 3
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4.2.2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5.3.0
+        with:
+          python-version: "3.12.1"
+
+      - name: Set up KLC Check
+        run: |
+          git clone --depth 1 https://gitlab.com/kicad/libraries/kicad-library-utils /opt/kicad-library-utils
+          /opt/kicad-library-utils/klc-check/check_symbol.py --help
+          /opt/kicad-library-utils/klc-check/check_footprint.py --help
+
+      # NOTE: The command returns an exit code of 2 if there are warnings,
+      # but we do not want to fail the CI job if there are warnings.
+      - name: Check symbols
+        run: |
+          /opt/kicad-library-utils/klc-check/check_footprint.py -vv ./lib/footprints/_Custom.pretty/*.kicad_mod || [ "${?}" -eq 2 ]
