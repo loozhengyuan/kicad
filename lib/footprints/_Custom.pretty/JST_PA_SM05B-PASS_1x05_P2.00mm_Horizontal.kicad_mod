@@ -215,7 +215,6 @@
 		(size 1 2.7)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.25)
-		(thermal_bridge_angle 45)
 		(uuid "f6417408-7f85-4062-a035-db4f44a32c02")
 	)
 	(pad "2" smd roundrect
@@ -223,7 +222,6 @@
 		(size 1 2.7)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.25)
-		(thermal_bridge_angle 45)
 		(uuid "00b26256-becc-442d-8d1a-c4e8d4b9eb3f")
 	)
 	(pad "3" smd roundrect
@@ -231,7 +229,6 @@
 		(size 1 2.7)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.25)
-		(thermal_bridge_angle 45)
 		(uuid "89e70889-66fe-4af3-b4b9-a1ac480182f9")
 	)
 	(pad "4" smd roundrect
@@ -239,7 +236,6 @@
 		(size 1 2.7)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.25)
-		(thermal_bridge_angle 45)
 		(uuid "d34fdf49-5390-4802-8174-3772f11d2c8a")
 	)
 	(pad "5" smd roundrect
@@ -247,7 +243,6 @@
 		(size 1 2.7)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.25)
-		(thermal_bridge_angle 45)
 		(uuid "d704f61f-5cd4-4cbc-bec7-5378b06cdeaf")
 	)
 	(pad "MP" smd roundrect
@@ -255,7 +250,6 @@
 		(size 1.8 3.8)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.25)
-		(thermal_bridge_angle 45)
 		(uuid "d2b89b90-f3fa-4bdf-a789-6233ed52c577")
 	)
 	(pad "MP" smd roundrect
@@ -263,7 +257,6 @@
 		(size 1.8 3.8)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.25)
-		(thermal_bridge_angle 45)
 		(uuid "30044c90-e33d-46df-b1d9-0753fff16917")
 	)
 	(model "${KICAD8_3DMODEL_DIR}/_Custom.3dshapes/JST_PA_SM05B-PASS_1x05_P2.00mm_Horizontal.wrl"
