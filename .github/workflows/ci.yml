@@ -55,8 +55,9 @@ jobs:
           python-version: "3.12.1"
 
       - name: Set up KLC Check
+        # FIXME: Temporarily pinned to v8 to pass tests
         run: |
-          git clone --depth 1 https://gitlab.com/kicad/libraries/kicad-library-utils /opt/kicad-library-utils
+          git clone --depth 1 --branch v8 https://gitlab.com/kicad/libraries/kicad-library-utils /opt/kicad-library-utils
           /opt/kicad-library-utils/klc-check/check_symbol.py --help
           /opt/kicad-library-utils/klc-check/check_footprint.py --help
 
