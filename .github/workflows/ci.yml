@@ -24,22 +24,17 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v5.0.0
 
-      - name: Set up Python
-        uses: actions/setup-python@v6.0.0
+      - name: Set up KiCad Library Utils
+        uses: loozhengyuan/actions/setup-kicad-library-utils@main
         with:
-          python-version: "3.12.1"
-
-      - name: Set up KLC Check
-        run: |
-          git clone --depth 1 https://gitlab.com/kicad/libraries/kicad-library-utils /opt/kicad-library-utils
-          /opt/kicad-library-utils/klc-check/check_symbol.py --help
-          /opt/kicad-library-utils/klc-check/check_footprint.py --help
+          # FIXME: Temporarily pinned to v8 to pass tests
+          version: "v8"
 
       # NOTE: The command returns an exit code of 2 if there are warnings,
       # but we do not want to fail the CI job if there are warnings.
       - name: Check symbols
         run: |
-          /opt/kicad-library-utils/klc-check/check_symbol.py -vv --footprints ./lib/footprints/ ./lib/symbols/_Custom.kicad_sym || [ "${?}" -eq 2 ]
+          klc-symbol -vv --footprints ./lib/footprints/ ./lib/symbols/_Custom.kicad_sym || [ "${?}" -eq 2 ]
 
   test-footprints:
     runs-on: ubuntu-22.04
@@ -49,20 +44,14 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v5.0.0
 
-      - name: Set up Python
-        uses: actions/setup-python@v6.0.0
+      - name: Set up KiCad Library Utils
+        uses: loozhengyuan/actions/setup-kicad-library-utils@main
         with:
-          python-version: "3.12.1"
-
-      - name: Set up KLC Check
-        # FIXME: Temporarily pinned to v8 to pass tests
-        run: |
-          git clone --depth 1 --branch v8 https://gitlab.com/kicad/libraries/kicad-library-utils /opt/kicad-library-utils
-          /opt/kicad-library-utils/klc-check/check_symbol.py --help
-          /opt/kicad-library-utils/klc-check/check_footprint.py --help
+          # FIXME: Temporarily pinned to v8 to pass tests
+          version: "v8"
 
       # NOTE: The command returns an exit code of 2 if there are warnings,
       # but we do not want to fail the CI job if there are warnings.
-      - name: Check symbols
+      - name: Check footprints
         run: |
-          /opt/kicad-library-utils/klc-check/check_footprint.py -vv ./lib/footprints/_Custom.pretty/*.kicad_mod || [ "${?}" -eq 2 ]
+          klc-footprint -vv ./lib/footprints/_Custom.pretty/*.kicad_mod || [ "${?}" -eq 2 ]
