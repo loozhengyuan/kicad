@@ -1,7 +1,7 @@
 (footprint "Connector_PCBEdge_KyoceraAVX_00-9159_10Way"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "10-position board-to-board card edge connector https://datasheets.kyocera-avx.com/OpenEndedCardEdge_00-9159.pdf")
 	(tags "Kyocera AVX")
@@ -24,19 +24,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "bb152762-f755-4c31-9d16-ed2e52578921")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -127,7 +114,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "B.CrtYd")
 		(uuid "83a67ca8-cf76-46df-8986-5a2ecf41e3b8")
 	)
@@ -138,7 +125,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "3a789fa3-1470-4630-909e-00d403b4c564")
 	)
@@ -236,7 +223,8 @@
 			"f4d30513-33a5-4224-b068-60cdbb0cf7b3"
 		)
 	)
-	(model "${KICAD8_3DMODEL_DIR}/_Custom.3dshapes/Connector_PCBEdge_KyoceraAVX_00-9159_10Way.wrl"
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/_Custom.3dshapes/Connector_PCBEdge_KyoceraAVX_00-9159_10Way.step"
 		(offset
 			(xyz 0 0 0)
 		)
