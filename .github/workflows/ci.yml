@@ -26,9 +26,6 @@ jobs:
 
       - name: Set up KiCad Library Utils
         uses: loozhengyuan/actions/setup-kicad-library-utils@main
-        with:
-          # FIXME: Temporarily pinned to v8 to pass tests
-          version: "v8"
 
       # NOTE: The command returns an exit code of 2 if there are warnings,
       # but we do not want to fail the CI job if there are warnings.
@@ -46,9 +43,6 @@ jobs:
 
       - name: Set up KiCad Library Utils
         uses: loozhengyuan/actions/setup-kicad-library-utils@main
-        with:
-          # FIXME: Temporarily pinned to v8 to pass tests
-          version: "v8"
 
       # NOTE: The command returns an exit code of 2 if there are warnings,
       # but we do not want to fail the CI job if there are warnings.

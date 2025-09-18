@@ -1,7 +1,7 @@
 (footprint "CoaxialSwitch_Murata_MM8030-26_Vertical"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Microwave Coaxial Connectors with Switch SWG Type https://www.murata.com/-/media/webrenewal/support/library/catalog/products/connector/o30e.ashx")
 	(tags "Murata")
@@ -25,19 +25,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "18fc5250-b6c5-46c1-8ed8-26987e4083e3")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -69,6 +56,30 @@
 		)
 	)
 	(attr smd allow_soldermask_bridges)
+	(fp_poly
+		(pts
+			(xy -0.5 -1.15) (xy 0.5 -1.15) (xy 0.5 -0.55) (xy 0.25 -0.32) (xy -0.25 -0.32) (xy -0.5 -0.55)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "408a87da-0fd0-4b2c-85f4-34cb77c5c8d0")
+	)
+	(fp_poly
+		(pts
+			(xy -0.25 0.32) (xy 0.25 0.32) (xy 0.5 0.55) (xy 0.5 1.15) (xy -0.5 1.15) (xy -0.5 0.55)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "b92496fc-57f9-4a5f-b97e-e692467442f3")
+	)
 	(fp_line
 		(start -1.1 -1.1)
 		(end -1.1 -0.7)
@@ -137,33 +148,9 @@
 			(width 0.12)
 			(type default)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.SilkS")
 		(uuid "6c24bff8-c9ec-43d1-86e0-5ec93e51b19d")
-	)
-	(fp_poly
-		(pts
-			(xy -0.5 -1.15) (xy 0.5 -1.15) (xy 0.5 -0.55) (xy 0.25 -0.32) (xy -0.25 -0.32) (xy -0.5 -0.55)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill solid)
-		(layer "F.Mask")
-		(uuid "408a87da-0fd0-4b2c-85f4-34cb77c5c8d0")
-	)
-	(fp_poly
-		(pts
-			(xy -0.25 0.32) (xy 0.25 0.32) (xy 0.5 0.55) (xy 0.5 1.15) (xy -0.5 1.15) (xy -0.5 0.55)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill solid)
-		(layer "F.Mask")
-		(uuid "b92496fc-57f9-4a5f-b97e-e692467442f3")
 	)
 	(fp_rect
 		(start -1.5 -1.5)
@@ -172,7 +159,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "6b67b5c9-7445-4af5-a110-9b1b7a0ae57f")
 	)
@@ -253,7 +240,7 @@
 	(pad "G" smd custom
 		(at -0.915 0)
 		(size 0.47 1.1)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(options
 			(clearance outline)
 			(anchor rect)
@@ -278,7 +265,7 @@
 	(pad "G" smd custom
 		(at 0.915 0)
 		(size 0.47 1.1)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(options
 			(clearance outline)
 			(anchor rect)
@@ -294,7 +281,8 @@
 		)
 		(uuid "91528314-d5df-4126-97d0-e13ecf15c962")
 	)
-	(model "${KICAD8_3DMODEL_DIR}/_Custom.3dshapes/CoaxialSwitch_Murata_MM8030-26_Vertical.wrl"
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/_Custom.3dshapes/CoaxialSwitch_Murata_MM8030-26_Vertical.step"
 		(offset
 			(xyz 0 0 0)
 		)
