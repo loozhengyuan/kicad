@@ -17,7 +17,7 @@ defaults:
 
 jobs:
   test-symbols:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     timeout-minutes: 3
 
     steps:
@@ -34,7 +34,7 @@ jobs:
           klc-symbol -vv --footprints ./lib/footprints/ ./lib/symbols/_Custom.kicad_sym || [ "${?}" -eq 2 ]
 
   test-footprints:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     timeout-minutes: 3
 
     steps:
