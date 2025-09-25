@@ -22,10 +22,10 @@ jobs:
 
     steps:
       - name: Checkout branch
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
 
       - name: Set up KiCad Library Utils
-        uses: loozhengyuan/actions/setup-kicad-library-utils@main
+        uses: loozhengyuan/actions/setup-kicad-library-utils@2c527d371bd40227794f040106f645aff2b34568 # main
 
       # NOTE: The command returns an exit code of 2 if there are warnings,
       # but we do not want to fail the CI job if there are warnings.
@@ -39,10 +39,10 @@ jobs:
 
     steps:
       - name: Checkout branch
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
 
       - name: Set up KiCad Library Utils
-        uses: loozhengyuan/actions/setup-kicad-library-utils@main
+        uses: loozhengyuan/actions/setup-kicad-library-utils@2c527d371bd40227794f040106f645aff2b34568 # main
 
       # NOTE: The command returns an exit code of 2 if there are warnings,
       # but we do not want to fail the CI job if there are warnings.
