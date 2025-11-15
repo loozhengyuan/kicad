@@ -258,6 +258,7 @@
 	)
 	(embedded_fonts no)
 	(model "${KICAD9_3DMODEL_DIR}/_Custom.3dshapes/JST_PA_SM05B-PASS_1x05_P2.00mm_Horizontal.step"
+		(hide yes)
 		(offset
 			(xyz 0 0 0)
 		)
@@ -265,7 +266,18 @@
 			(xyz 1 1 1)
 		)
 		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+	(model "${CUSTOM_LIBRARY_DIR}/3dmodels/_Custom.3dshapes/JST_PA_SM05B-PASS_1x05_P2.00mm_Horizontal.step"
+		(offset
 			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -180)
 		)
 	)
 )
