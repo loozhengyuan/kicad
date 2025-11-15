@@ -27,11 +27,9 @@ jobs:
       - name: Set up KiCad Library Utils
         uses: loozhengyuan/actions/setup-kicad-library-utils@2c527d371bd40227794f040106f645aff2b34568 # main
 
-      # NOTE: The command returns an exit code of 2 if there are warnings,
-      # but we do not want to fail the CI job if there are warnings.
       - name: Check symbols
         run: |
-          klc-symbol -vv --footprints ./lib/footprints/ ./lib/symbols/_Custom.kicad_sym || [ "${?}" -eq 2 ]
+          ./scripts/test-symbols.sh
 
   test-footprints:
     runs-on: ubuntu-24.04
@@ -44,8 +42,6 @@ jobs:
       - name: Set up KiCad Library Utils
         uses: loozhengyuan/actions/setup-kicad-library-utils@2c527d371bd40227794f040106f645aff2b34568 # main
 
-      # NOTE: The command returns an exit code of 2 if there are warnings,
-      # but we do not want to fail the CI job if there are warnings.
       - name: Check footprints
         run: |
-          klc-footprint -vv --exclude F9.3 ./lib/footprints/_Custom.pretty/*.kicad_mod || [ "${?}" -eq 2 ]
+          ./scripts/test-footprints.sh
