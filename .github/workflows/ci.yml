@@ -22,7 +22,7 @@ jobs:
 
     steps:
       - name: Checkout branch
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
 
       - name: Set up KiCad Library Utils
         uses: loozhengyuan/actions/setup-kicad-library-utils@2c527d371bd40227794f040106f645aff2b34568 # main
@@ -37,7 +37,7 @@ jobs:
 
     steps:
       - name: Checkout branch
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
 
       - name: Set up KiCad Library Utils
         uses: loozhengyuan/actions/setup-kicad-library-utils@2c527d371bd40227794f040106f645aff2b34568 # main
