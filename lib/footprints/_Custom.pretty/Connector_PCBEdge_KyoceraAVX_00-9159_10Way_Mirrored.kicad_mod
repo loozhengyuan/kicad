@@ -1,4 +1,4 @@
-(footprint "Connector_PCBEdge_KyoceraAVX_00-9159_10Way"
+(footprint "Connector_PCBEdge_KyoceraAVX_00-9159_10Way_Mirrored"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -6,7 +6,7 @@
 	(descr "10-position board-to-board card edge connector https://datasheets.kyocera-avx.com/OpenEndedCardEdge_00-9159.pdf")
 	(tags "Kyocera AVX")
 	(property "Reference" "REF**"
-		(at 0 -6 0)
+		(at 0 -6 180)
 		(layer "F.SilkS")
 		(uuid "c6f7268c-c862-4ac0-b347-3e9dd165867d")
 		(effects
@@ -16,7 +16,7 @@
 			)
 		)
 	)
-	(property "Value" "Connector_PCBEdge_KyoceraAVX_00-9159_10Way"
+	(property "Value" "Connector_PCBEdge_KyoceraAVX_00-9159_10Way_Mirrored"
 		(at 0 4 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -57,8 +57,8 @@
 	(zone_connect 2)
 	(attr exclude_from_pos_files exclude_from_bom)
 	(fp_line
-		(start -5.1 -2)
-		(end -5.1 1)
+		(start -5.1 2)
+		(end -5.1 -1)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -67,8 +67,8 @@
 		(uuid "3bd533d0-af66-4746-840e-c236824138ef")
 	)
 	(fp_line
-		(start 5.1 1)
-		(end 5.1 -2)
+		(start 5.1 -1)
+		(end 5.1 2)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -78,7 +78,7 @@
 	)
 	(fp_poly
 		(pts
-			(xy -5 1.4) (xy -4.8 1.6) (xy -5 1.8)
+			(xy -5 -1.4) (xy -4.8 -1.6) (xy -5 -1.8)
 		)
 		(stroke
 			(width 0.12)
@@ -89,8 +89,8 @@
 		(uuid "7eeb8427-1a2c-4c23-ab91-6ad1e981d2d0")
 	)
 	(fp_line
-		(start -5.1 -2)
-		(end -5.1 1)
+		(start -5.1 2)
+		(end -5.1 -1)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -99,8 +99,8 @@
 		(uuid "b5e74dc7-c4a5-499a-ab76-fdb7920958ed")
 	)
 	(fp_line
-		(start 5.1 1)
-		(end 5.1 -2)
+		(start 5.1 -1)
+		(end 5.1 2)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -109,8 +109,8 @@
 		(uuid "3c9b7726-11e8-4613-b750-d385d4723496")
 	)
 	(fp_line
-		(start -1.3 -2.5)
-		(end -5 -2.5)
+		(start -1.3 2.5)
+		(end -5 2.5)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -119,8 +119,8 @@
 		(uuid "52be54b3-9d19-4792-8768-eb0343ea310c")
 	)
 	(fp_line
-		(start -1.3 -2.5)
-		(end -1.3 0.3)
+		(start -1.3 2.5)
+		(end -1.3 -0.3)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -129,8 +129,8 @@
 		(uuid "098eb8b6-caca-4d37-b592-09e54e85c95e")
 	)
 	(fp_line
-		(start -0.7 0.3)
-		(end -0.7 -2.5)
+		(start -0.7 -0.3)
+		(end -0.7 2.5)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -139,8 +139,8 @@
 		(uuid "7c727984-de45-4308-b2fe-21f25aa99fde")
 	)
 	(fp_line
-		(start 5 -2.5)
-		(end -0.77 -2.5)
+		(start 5 2.5)
+		(end -0.77 2.5)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -149,9 +149,9 @@
 		(uuid "8eace403-9ac0-46f1-8390-5b624b9ab628")
 	)
 	(fp_arc
-		(start -0.7 0.3)
-		(mid -1 0.6)
-		(end -1.3 0.3)
+		(start -1.3 -0.3)
+		(mid -1 -0.6)
+		(end -0.7 -0.3)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -182,8 +182,8 @@
 		(uuid "1d2b8fb0-3858-4bf5-a3cf-38a70e48e9b1")
 	)
 	(fp_rect
-		(start -5 -2.5)
-		(end 5 1)
+		(start -5 -1)
+		(end 5 2.5)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -193,8 +193,8 @@
 		(uuid "c85fd318-6a50-4f61-aff6-feb9dfb397f3")
 	)
 	(fp_line
-		(start -4.5 -2.5)
-		(end -4 -2)
+		(start -4.5 2.5)
+		(end -4 2)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -203,8 +203,8 @@
 		(uuid "ade9cbd3-819c-44f5-adc2-4f727c8f5519")
 	)
 	(fp_line
-		(start -4 -2)
-		(end -3.5 -2.5)
+		(start -4 2)
+		(end -3.5 2.5)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -213,8 +213,8 @@
 		(uuid "207b1ac2-1d11-41ba-933d-d094ef7892fb")
 	)
 	(fp_rect
-		(start -5 -2.5)
-		(end 5 1)
+		(start -5 -1)
+		(end 5 2.5)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -224,7 +224,7 @@
 		(uuid "b0f19513-b6f0-491f-8dfa-31a77675cec1")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 -4 0)
+		(at 0 -4 180)
 		(layer "F.Fab")
 		(uuid "f2eb8b82-0230-4e8f-8428-76f1d1609260")
 		(effects
@@ -235,70 +235,70 @@
 		)
 	)
 	(pad "1" connect rect
-		(at -4 0)
+		(at -4 0 180)
 		(size 1 4)
 		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 45)
 		(uuid "2773f46b-62ac-4cec-9ec8-eb0ad792686a")
 	)
 	(pad "2" connect rect
-		(at -2 0)
+		(at -2 0 180)
 		(size 1 4)
 		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 45)
 		(uuid "7ecd44c6-173f-4c10-9904-cd2f468de74a")
 	)
 	(pad "3" connect rect
-		(at 0 0)
+		(at 0 0 180)
 		(size 1 4)
 		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 45)
 		(uuid "1e8aae2c-2a15-478b-abc3-50c9c56987cd")
 	)
 	(pad "4" connect rect
-		(at 2 0)
+		(at 2 0 180)
 		(size 1 4)
 		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 45)
 		(uuid "083470ac-818d-4357-bd84-8a38d956e9d1")
 	)
 	(pad "5" connect rect
-		(at 4 0)
+		(at 4 0 180)
 		(size 1 4)
 		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 45)
 		(uuid "62b74164-45b0-40b8-8223-660a5300caad")
 	)
 	(pad "6" connect rect
-		(at -4 0)
+		(at -4 0 180)
 		(size 1 4)
 		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 45)
 		(uuid "5712488b-8350-4e46-b6a9-a71d61acf4c5")
 	)
 	(pad "7" connect rect
-		(at -2 0)
+		(at -2 0 180)
 		(size 1 4)
 		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 45)
 		(uuid "7e83836e-2b1b-414b-bac2-6b6095cf4e4a")
 	)
 	(pad "8" connect rect
-		(at 0 0)
+		(at 0 0 180)
 		(size 1 4)
 		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 45)
 		(uuid "ee7d180f-4c87-471a-a0e1-8c536e53632d")
 	)
 	(pad "9" connect rect
-		(at 2 0)
+		(at 2 0 180)
 		(size 1 4)
 		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 45)
 		(uuid "8ee300c8-e3bd-4524-85ac-0d25d9a7f940")
 	)
 	(pad "10" connect rect
-		(at 4 0)
+		(at 4 0 180)
 		(size 1 4)
 		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 45)
@@ -329,7 +329,7 @@
 	)
 	(model "${CUSTOM_LIBRARY_DIR}/3dmodels/_Custom.3dshapes/Connector_PCBEdge_KyoceraAVX_00-9159_10Way.step"
 		(offset
-			(xyz 0 -1 -0.8)
+			(xyz 0 -9 -0.8)
 		)
 		(scale
 			(xyz 1 1 1)
