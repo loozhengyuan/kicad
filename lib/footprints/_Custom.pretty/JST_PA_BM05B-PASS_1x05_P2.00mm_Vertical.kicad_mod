@@ -281,8 +281,7 @@
 		(uuid "a0852045-af44-4c8a-b8bc-2d9c52c41354")
 	)
 	(embedded_fonts no)
-	(model "${KICAD9_3DMODEL_DIR}/_Custom.3dshapes/JST_PA_BM05B-PASS_1x05_P2.00mm_Vertical.step"
-		(hide yes)
+	(model "${KICAD9_3DMODEL_DIR}/Connector_JST.3dshapes/JST_PA_BM05B-PASS_1x05_P2.00mm_Vertical.step"
 		(offset
 			(xyz 0 0 0)
 		)
@@ -290,7 +289,7 @@
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -0 -0 -0)
 		)
 	)
 	(model "${CUSTOM_LIBRARY_DIR}/3dmodels/_Custom.3dshapes/JST_PA_BM05B-PASS_1x05_P2.00mm_Vertical.step"

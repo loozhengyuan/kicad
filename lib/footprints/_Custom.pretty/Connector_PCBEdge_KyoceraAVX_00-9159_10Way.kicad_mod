@@ -316,17 +316,6 @@
 			(xyz -0 -0 -0)
 		)
 	)
-	(model "${KICAD9_3DMODEL_DIR}/_Custom.3dshapes/Connector_PCBEdge_KyoceraAVX_00-9159_10Way.step"
-		(offset
-			(xyz 0 0 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 0)
-		)
-	)
 	(model "${CUSTOM_LIBRARY_DIR}/3dmodels/_Custom.3dshapes/Connector_PCBEdge_KyoceraAVX_00-9159_10Way.step"
 		(offset
 			(xyz 0 -1 -0.8)
