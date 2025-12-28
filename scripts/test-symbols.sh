@@ -18,6 +18,7 @@ fi
 # but we do not want to fail the CI job if there are warnings.
 "${klc_command}" \
     -vv \
+    --multiprocess "$(nproc)" \
     --footprints ./lib/footprints/ \
     ./lib/symbols/*.kicad_sym \
     || [ "${?}" -eq 2 ]
