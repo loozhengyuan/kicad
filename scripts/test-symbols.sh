@@ -16,9 +16,12 @@ fi
 
 # NOTE: The command returns an exit code of 2 if there are warnings,
 # but we do not want to fail the CI job if there are warnings.
+# FIXME: Ignoring S4.5 due to upstream KLC utils bug
+# https://gitlab.com/kicad/libraries/kicad-library-utils/-/work_items/436
 "${klc_command}" \
     -vv \
+    --exclude 'S4.5' \
     --multiprocess "$(nproc)" \
     --footprints ./lib/footprints/ \
-    ./lib/symbols/*.kicad_sym \
+    ./lib/symbols/_Custom.kicad_symdir/*.kicad_sym \
     || [ "${?}" -eq 2 ]
