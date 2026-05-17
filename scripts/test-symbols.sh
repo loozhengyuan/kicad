@@ -9,7 +9,7 @@ script_name="$(basename "${BASH_SOURCE[0]}")"
 
 klc_command="klc-symbol"
 
-if ! command -v "${klc_command}"; then
+if ! command -v "${klc_command}" >/dev/null; then
     echo "error: \`${klc_command}\` command not found, ensure \`kicad-library-utils\` is installed and added to PATH" >&2
     exit 1
 fi
@@ -20,5 +20,5 @@ fi
     -vv \
     --multiprocess "$(nproc)" \
     --footprints ./lib/footprints/ \
-    ./lib/symbols/*.kicad_sym \
+    ./lib/symbols/_Custom.kicad_symdir/*.kicad_sym \
     || [ "${?}" -eq 2 ]
