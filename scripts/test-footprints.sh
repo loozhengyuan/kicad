@@ -20,5 +20,5 @@ fi
 "${klc_command}" \
     -vv \
     --exclude F9.3 \
-    ./lib/footprints/_Custom.pretty/*.kicad_mod \
+    ./lib/footprints/ZY_*.pretty/*.kicad_mod \
     || [ "${?}" -eq 2 ]

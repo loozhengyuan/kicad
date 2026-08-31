@@ -677,7 +677,7 @@
 			(xyz -0 -0 -0)
 		)
 	)
-	(model "${CUSTOM_LIBRARY_DIR}/3dmodels/_Custom.3dshapes/ESP32-C6-WROOM-1.step"
+	(model "${ZY_KICAD_DIR}/lib/3dmodels/ZY_RF_Module.3dshapes/ESP32-C6-WROOM-1.step"
 		(offset
 			(xyz -9 -9.75 0)
 		)

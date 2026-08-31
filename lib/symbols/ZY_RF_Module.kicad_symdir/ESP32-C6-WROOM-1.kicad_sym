@@ -30,7 +30,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_Custom:ESP32-C6-WROOM-1"
+		(property "Footprint" "ZY_RF_Module:ESP32-C6-WROOM-1"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)

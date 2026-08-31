@@ -1,4 +1,4 @@
-(footprint "Connector_PCBEdge_KyoceraAVX_00-9159_10Way_Mirrored"
+(footprint "PCBEdge_KyoceraAVX_00-9159_10Way_Mirrored"
 	(version 20260206)
 	(generator "pcbnew")
 	(generator_version "10.0")
@@ -16,7 +16,7 @@
 			)
 		)
 	)
-	(property "Value" "Connector_PCBEdge_KyoceraAVX_00-9159_10Way_Mirrored"
+	(property "Value" "PCBEdge_KyoceraAVX_00-9159_10Way_Mirrored"
 		(at 0 4 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -317,7 +317,7 @@
 			(xyz -0 -0 -0)
 		)
 	)
-	(model "${CUSTOM_LIBRARY_DIR}/3dmodels/_Custom.3dshapes/Connector_PCBEdge_KyoceraAVX_00-9159_10Way_Mirrored.step"
+	(model "${ZY_KICAD_DIR}/lib/3dmodels/ZY_Connector.3dshapes/PCBEdge_KyoceraAVX_00-9159_10Way_Mirrored.step"
 		(offset
 			(xyz 0 -9 -0.8)
 		)

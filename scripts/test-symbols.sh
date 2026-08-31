@@ -20,5 +20,5 @@ fi
     -vv \
     --multiprocess "$(nproc)" \
     --footprints ./lib/footprints/ \
-    ./lib/symbols/_Custom.kicad_symdir/*.kicad_sym \
+    ./lib/symbols/ZY_*.kicad_symdir/*.kicad_sym \
     || [ "${?}" -eq 2 ]
