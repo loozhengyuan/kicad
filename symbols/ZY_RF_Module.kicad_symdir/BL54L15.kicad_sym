@@ -2,7 +2,7 @@
 	(version 20251024)
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
-	(symbol "453-00001R"
+	(symbol "BL54L15"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -18,7 +18,7 @@
 				)
 			)
 		)
-		(property "Value" "453-00001R"
+		(property "Value" "BL54L15"
 			(at 7.112 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28,7 +28,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ZY_RF_Module:453-00001R"
+		(property "Footprint" "ZY_RF_Module:BL54L15"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50,7 +50,7 @@
 				)
 			)
 		)
-		(property "Description" "RF Module, nRF54L15 SoC, Bluetooth LE, 802.15.4, ARM Cortex-M33, 1.7-3.6V, SMD, onboard antenna"
+		(property "Description" "RF Module, nRF54L15 SoC, Bluetooth LE, 802.15.4, ARM Cortex-M33, 1.7-3.6V, SMD"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -61,7 +61,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "Ezurio Laird Nordic BLE nRF54"
+		(property "ki_keywords" "Ezurio Laird Nordic BLE NFC"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -72,7 +72,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "453?00001R*"
+		(property "ki_fp_filters" "BL54L15*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -83,7 +83,7 @@
 				)
 			)
 		)
-		(symbol "453-00001R_0_0"
+		(symbol "BL54L15_0_0"
 			(pin power_in line
 				(at 0 -35.56 90)
 				(length 2.54)
@@ -481,7 +481,7 @@
 				)
 			)
 		)
-		(symbol "453-00001R_1_0"
+		(symbol "BL54L15_1_0"
 			(pin bidirectional line
 				(at 15.24 -2.54 180)
 				(length 2.54)
@@ -801,7 +801,7 @@
 				)
 			)
 		)
-		(symbol "453-00001R_1_1"
+		(symbol "BL54L15_1_1"
 			(rectangle
 				(start -12.7 33.02)
 				(end 12.7 -33.02)
