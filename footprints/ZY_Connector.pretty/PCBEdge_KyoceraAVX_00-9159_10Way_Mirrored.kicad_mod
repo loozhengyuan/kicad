@@ -317,7 +317,7 @@
 			(xyz -0 -0 -0)
 		)
 	)
-	(model "${ZY_KICAD_DIR}/3dmodels/ZY_Connector.3dshapes/PCBEdge_KyoceraAVX_00-9159_10Way_Mirrored.step"
+	(model "${KIPRJMOD}/lib/3dmodels/ZY_Connector.3dshapes/PCBEdge_KyoceraAVX_00-9159_10Way_Mirrored.step"
 		(offset
 			(xyz 0 -9 -0.8)
 		)

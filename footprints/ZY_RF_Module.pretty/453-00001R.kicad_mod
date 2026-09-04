@@ -507,7 +507,7 @@
 			(xyz -0 -0 -0)
 		)
 	)
-	(model "${ZY_KICAD_DIR}/3dmodels/ZY_RF_Module.3dshapes/453-00001R.step"
+	(model "${KIPRJMOD}/lib/3dmodels/ZY_RF_Module.3dshapes/453-00001R.step"
 		(offset
 			(xyz 5 -7 0.4)
 		)
