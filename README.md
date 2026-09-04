@@ -6,32 +6,25 @@ Custom KiCad libraries, plugins, scripts, etc.
 
 ## Usage
 
-### Global Library (Recommended)
+Using it as a **Project Specific Library** is the recommended workflow because it allows you to pin to the exact library version when installed as a Git submodule.
 
-Start by cloning the repository to your local filesystem:
+Start by adding this repository as a Git submodule to your repository path (we assume `./hardware` is the KiCad project directory):
 
 ```shell
-mkdir -p ~/.local/share/kicad/lib
-git clone git@github.com:loozhengyuan/kicad ~/.local/share/kicad/lib/loozhengyuan
+git submodule add git@github.com:loozhengyuan/kicad ./hardware/lib
 ```
 
-Next, set the `ZY_KICAD_DIR` variable via `Preferences` → `Configure Paths...`:
-
-| Name           | Path                                    |
-| -------------- | --------------------------------------- |
-| `ZY_KICAD_DIR` | `~/.local/share/kicad/lib/loozhengyuan` |
-
-Add the symbol library table via `Preferences` → `Manage Symbol Libraries...`:
+Add the symbol library table via `Preferences` → `Manage Symbol Libraries...` under the `Project Specific Libraries` tab:
 
 | Enable | Show | Nickname | Library Path                                | Library Format | Options | Description |
 | ------ | ---- | -------- | ------------------------------------------- | -------------- | ------- | ----------- |
-| ✅     | ✅   | `ZY`     | `${ZY_KICAD_DIR}/lib/symbols/sym-lib-table` | Table          |         |             |
+| ✅     | ✅   | `ZY`     | `${KIPRJMOD}/lib/lib/symbols/sym-lib-table` | Table          |         |             |
 
-Add the footprint library table via `Preferences` → `Manage Footprint Libraries...`:
+Add the footprint library table via `Preferences` → `Manage Footprint Libraries...` under the `Project Specific Libraries` tab:
 
-| Enable | Show | Nickname | Library Path                                  | Library Format | Options | Description |
-| ------ | ---- | -------- | --------------------------------------------- | -------------- | ------- | ----------- |
-| ✅     | ✅   | `ZY`     | `${ZY_KICAD_DIR}/lib/footprints/fp-lib-table` | Table          |         |             |
+| Enable | Nickname | Library Path                                  | Library Format | Options | Description |
+| ------ | -------- | --------------------------------------------- | -------------- | ------- | ----------- |
+| ✅     | `ZY`     | `${KIPRJMOD}/lib/lib/footprints/fp-lib-table` | Table          |         |             |
 
 ## Development
 
