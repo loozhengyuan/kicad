@@ -269,7 +269,7 @@
 			(xyz -0 -0 -0)
 		)
 	)
-	(model "${ZY_KICAD_DIR}/lib/3dmodels/ZY_Connector.3dshapes/JST_PA_SM05B-PASS_1x05_P2.00mm_Horizontal.step"
+	(model "${ZY_KICAD_DIR}/3dmodels/ZY_Connector.3dshapes/JST_PA_SM05B-PASS_1x05_P2.00mm_Horizontal.step"
 		(offset
 			(xyz 0 0 0)
 		)

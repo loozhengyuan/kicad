@@ -19,6 +19,6 @@ fi
 "${klc_command}" \
     -vv \
     --multiprocess "$(nproc)" \
-    --footprints ./lib/footprints/ \
-    ./lib/symbols/ZY_*.kicad_symdir/*.kicad_sym \
+    --footprints ./footprints/ \
+    ./symbols/ZY_*.kicad_symdir/*.kicad_sym \
     || [ "${?}" -eq 2 ]
