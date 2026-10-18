@@ -28,6 +28,14 @@ Add the footprint library table via `Preferences` → `Manage Footprint Librarie
 
 ## Development
 
+### Local Setup
+
+Paths resolve relative to `${KIPRJMOD}/lib`, so develop via a surrogate KiCad project with `lib` symlinked to your local clone, then add the libraries as described in [Usage](#usage). Edits made in KiCad are saved directly to the clone.
+
+```shell
+ln -s /path/to/local/clone /path/to/project/lib
+```
+
 ### Major Version Upgrade
 
 To upgrade symbols to the latest KiCad version format:
