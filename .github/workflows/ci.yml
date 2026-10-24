@@ -24,8 +24,8 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
-      - name: Set up KiCad Library Utils
-        uses: loozhengyuan/actions/setup-kicad-library-utils@2c527d371bd40227794f040106f645aff2b34568 # main
+      - name: Set up KiCad Library Tools
+        uses: loozhengyuan/actions/setup-kicad-library-tools@6b6d674ae3ba55759eafd1c58bde252b0a272144 # main
 
       - name: Check symbols
         run: |
@@ -39,8 +39,8 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
-      - name: Set up KiCad Library Utils
-        uses: loozhengyuan/actions/setup-kicad-library-utils@2c527d371bd40227794f040106f645aff2b34568 # main
+      - name: Set up KiCad Library Tools
+        uses: loozhengyuan/actions/setup-kicad-library-tools@6b6d674ae3ba55759eafd1c58bde252b0a272144 # main
 
       - name: Check footprints
         run: |
