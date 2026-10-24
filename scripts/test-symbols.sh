@@ -10,7 +10,7 @@ script_name="$(basename "${BASH_SOURCE[0]}")"
 klc_command="klc-symbol"
 
 if ! command -v "${klc_command}" >/dev/null; then
-    echo "error: \`${klc_command}\` command not found, ensure \`kicad-library-utils\` is installed and added to PATH" >&2
+    echo "error: \`${klc_command}\` command not found, ensure \`kicad-library-tools\` is installed and added to PATH" >&2
     exit 1
 fi
 
