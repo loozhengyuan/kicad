@@ -1,0 +1,124 @@
+(footprint "TestPoint_TE_RCU"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "TE Connectivity RC series SMD circuit probe pad, RCU, 0603 (1.6x0.8mm) https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773266&DocType=Data%20Sheet&DocLang=English&DocFormat=pdf&PartCntxt=1625854-3")
+	(tags "1625854")
+	(property "Reference" "REF**"
+		(at 0 -1.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "da44a696-8e0d-4ef9-befc-97b82ce8720d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TestPoint_TE_RCU"
+		(at 0 1.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "37a0e09b-eba3-41d5-bb57-9d05be35322b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "15935b58-7a3a-4d39-bd41-af297a091d6d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "648441e4-af3a-4621-a07f-e4da932b3064")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.05 -0.65)
+		(end 1.05 0.65)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "05ee7fdc-24e0-45a7-aaf5-884cb6576e89")
+	)
+	(fp_rect
+		(start -0.8 -0.4)
+		(end 0.8 0.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "ab5228bd-c04d-409d-b0aa-108cf2e58697")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "51dabdc5-2ebc-4fce-8ec8-9f8415952303")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 0 0)
+		(size 1.8 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "0106bdbf-3f84-4834-8b26-a3c08044a84b")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_TE_RCU.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+	(model "${KIPRJMOD}/lib/3dmodels/ZY_TestPoint.3dshapes/TestPoint_TE_RCU.step"
+		(offset
+			(xyz 0 -0.4 0.575)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)
