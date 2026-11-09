@@ -86,8 +86,8 @@
 		(uuid "685c470b-c729-42fb-8985-c54975c929ea")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.7 0.7)
+				(thickness 0.105)
 			)
 		)
 	)
